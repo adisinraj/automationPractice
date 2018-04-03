@@ -22,8 +22,11 @@ public class BaseTest{
 	@BeforeTest
 	public void loadConfigurationFile() {
 		properties = new Properties();
+		System.out.println(1);
 		ClassLoader classLoader = getClass().getClassLoader();
+		System.out.println(2);
 		String filePath = classLoader.getResource("config.properties").getPath();
+		System.out.println(3);
 		
 		try {
 			properties.load(new FileInputStream(new File(filePath)));

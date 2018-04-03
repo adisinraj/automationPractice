@@ -10,8 +10,7 @@ public class BasePage {
 		BasePage.driver= driver;
 	}
 
-	protected String getTitle(){
-		return driver.getTitle();
-		
+	protected void getUrl(String url){
+		driver.get(url);
 	}
 }
