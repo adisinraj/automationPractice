@@ -3,13 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.automationPractice.LoginTest">
+      <class name="com.atmecs.automationPractice.MessageTest">
         <methods>
-          <include name="performLoginFromHomepage"/>
+          <include name="composeMessage"/>
           <include name="quit"/>
           <include name="loadConfigurationFile"/>
         </methods>
-      </class> <!-- com.atmecs.automationPractice.LoginTest -->
+      </class> <!-- com.atmecs.automationPractice.MessageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,8 +2,9 @@ package com.atmecs.automationPractice;
 
 import org.testng.annotations.Test;
 
-public class RegisterationTest {
+public class RegisterationTest extends BaseTest{
   @Test
-  public void f() {
+  public void performRegisteration() {
+	  
   }
 }
