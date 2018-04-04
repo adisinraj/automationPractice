@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32094" started-at="2018-04-03T19:29:52Z" finished-at="2018-04-03T19:30:25Z">
+  <suite name="Default suite" duration-ms="27812" started-at="2018-04-04T19:00:30Z" finished-at="2018-04-04T19:00:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32094" started-at="2018-04-03T19:29:52Z" finished-at="2018-04-03T19:30:25Z">
-      <class name="com.atmecs.automationPractice.MessageTest">
-        <test-method status="PASS" signature="loadConfigurationFile()[pri:0, instance:com.atmecs.automationPractice.MessageTest@5bcea91b]" name="loadConfigurationFile" is-config="true" duration-ms="2878" started-at="2018-04-04T00:59:52Z" finished-at="2018-04-04T00:59:55Z">
+    <test name="Default test" duration-ms="27812" started-at="2018-04-04T19:00:30Z" finished-at="2018-04-04T19:00:57Z">
+      <class name="com.atmecs.automationPractice.RegisterationTest">
+        <test-method status="PASS" signature="loadConfigurationFile()[pri:0, instance:com.atmecs.automationPractice.RegisterationTest@5bcea91b]" name="loadConfigurationFile" is-config="true" duration-ms="6428" started-at="2018-04-05T00:30:30Z" finished-at="2018-04-05T00:30:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfigurationFile -->
-        <test-method status="PASS" signature="composeMessage()[pri:0, instance:com.atmecs.automationPractice.MessageTest@5bcea91b]" name="composeMessage" duration-ms="29186" started-at="2018-04-04T00:59:55Z" finished-at="2018-04-04T01:00:25Z">
+        <test-method status="PASS" signature="performRegisteration()[pri:0, instance:com.atmecs.automationPractice.RegisterationTest@5bcea91b]" name="performRegisteration" duration-ms="20748" started-at="2018-04-05T00:30:36Z" finished-at="2018-04-05T00:30:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- composeMessage -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.atmecs.automationPractice.MessageTest@5bcea91b]" name="quit" is-config="true" duration-ms="1" started-at="2018-04-04T01:00:25Z" finished-at="2018-04-04T01:00:25Z">
+        </test-method> <!-- performRegisteration -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.atmecs.automationPractice.RegisterationTest@5bcea91b]" name="quit" is-config="true" duration-ms="602" started-at="2018-04-05T00:30:57Z" finished-at="2018-04-05T00:30:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- com.atmecs.automationPractice.MessageTest -->
+      </class> <!-- com.atmecs.automationPractice.RegisterationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

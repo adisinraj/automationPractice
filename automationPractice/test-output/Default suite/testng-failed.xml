@@ -3,13 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.automationPractice.MessageTest">
+      <class name="com.atmecs.automationPractice.RegisterationTest">
         <methods>
-          <include name="composeMessage"/>
           <include name="quit"/>
+          <include name="performRegisteration"/>
           <include name="loadConfigurationFile"/>
         </methods>
-      </class> <!-- com.atmecs.automationPractice.MessageTest -->
+      </class> <!-- com.atmecs.automationPractice.RegisterationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
