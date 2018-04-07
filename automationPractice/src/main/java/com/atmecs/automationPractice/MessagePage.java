@@ -17,7 +17,7 @@ public class MessagePage extends BasePage{
 	private WebElement contactUsLInk;
 	
 	@FindBy(css="select#id_contact")
-	private WebElement selectHeadline;
+	private WebElement selectSubjectHeadline;
 	
 	@FindBy(css="select[name=id_order]")
 	private WebElement orderReference;
@@ -38,11 +38,12 @@ public class MessagePage extends BasePage{
 	Select reference;
 	
 	protected void composeMessage(String path,String message){
-		headline = new Select(selectHeadline);
+		headline = new Select(selectSubjectHeadline);
 		reference = new Select(orderReference);
 		
 		headline.selectByIndex(1);
 		reference.selectByIndex(0);
+		orderReference.sendKeys("1234");
 		filePath.sendKeys(path);
 		textBody.sendKeys(message);
 	}

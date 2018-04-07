@@ -117,7 +117,7 @@ public class RegisterationPage extends BasePage{
 		selectStateAndCountry();
 		this.zipcode.sendKeys(zipcode);
 		this.phoneNumber.sendKeys(mobileNo);
-		registerButton.click();
+		//registerButton.click();
 	}
 
 	public WebDriver wait(WebDriver driver,WebElement element){

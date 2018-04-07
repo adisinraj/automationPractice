@@ -1,25 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27812" started-at="2018-04-04T19:00:30Z" finished-at="2018-04-04T19:00:57Z">
+  <suite name="Suite" duration-ms="58493" started-at="2018-04-07T08:03:37Z" finished-at="2018-04-07T08:04:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27812" started-at="2018-04-04T19:00:30Z" finished-at="2018-04-04T19:00:57Z">
-      <class name="com.atmecs.automationPractice.RegisterationTest">
-        <test-method status="PASS" signature="loadConfigurationFile()[pri:0, instance:com.atmecs.automationPractice.RegisterationTest@5bcea91b]" name="loadConfigurationFile" is-config="true" duration-ms="6428" started-at="2018-04-05T00:30:30Z" finished-at="2018-04-05T00:30:36Z">
+    <test name="ChromeTest" duration-ms="26045" started-at="2018-04-07T08:03:37Z" finished-at="2018-04-07T08:04:03Z">
+      <class name="com.atmecs.automationPractice.LoginTest">
+        <test-method status="PASS" signature="loadConfigurationFile(java.lang.String)[pri:0, instance:com.atmecs.automationPractice.LoginTest@44c8afef]" name="loadConfigurationFile" is-config="true" duration-ms="4252" started-at="2018-04-07T13:33:37Z" finished-at="2018-04-07T13:33:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfigurationFile -->
-        <test-method status="PASS" signature="performRegisteration()[pri:0, instance:com.atmecs.automationPractice.RegisterationTest@5bcea91b]" name="performRegisteration" duration-ms="20748" started-at="2018-04-05T00:30:36Z" finished-at="2018-04-05T00:30:57Z">
+        <test-method status="PASS" signature="performLoginFromHomepage()[pri:0, instance:com.atmecs.automationPractice.LoginTest@44c8afef]" name="performLoginFromHomepage" duration-ms="16197" started-at="2018-04-07T13:33:41Z" finished-at="2018-04-07T13:33:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- performRegisteration -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.atmecs.automationPractice.RegisterationTest@5bcea91b]" name="quit" is-config="true" duration-ms="602" started-at="2018-04-05T00:30:57Z" finished-at="2018-04-05T00:30:57Z">
+        </test-method> <!-- performLoginFromHomepage -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.atmecs.automationPractice.LoginTest@44c8afef]" name="quit" is-config="true" duration-ms="4434" started-at="2018-04-07T13:33:58Z" finished-at="2018-04-07T13:34:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- com.atmecs.automationPractice.RegisterationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.atmecs.automationPractice.LoginTest -->
+      <class name="com.atmecs.automationPractice.MessageTest">
+        <test-method status="PASS" signature="loadConfigurationFile(java.lang.String)[pri:0, instance:com.atmecs.automationPractice.MessageTest@7b69c6ba]" name="loadConfigurationFile" is-config="true" duration-ms="4657" started-at="2018-04-07T13:33:37Z" finished-at="2018-04-07T13:33:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfigurationFile -->
+        <test-method status="PASS" signature="performLogin()[pri:0, instance:com.atmecs.automationPractice.MessageTest@7b69c6ba]" name="performLogin" duration-ms="15535" started-at="2018-04-07T13:33:42Z" finished-at="2018-04-07T13:33:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performLogin -->
+        <test-method status="PASS" signature="composeAndSendMessage()[pri:0, instance:com.atmecs.automationPractice.MessageTest@7b69c6ba]" name="composeAndSendMessage" duration-ms="4977" started-at="2018-04-07T13:33:57Z" depends-on-methods="com.atmecs.automationPractice.MessageTest.performLogin" finished-at="2018-04-07T13:34:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- composeAndSendMessage -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.atmecs.automationPractice.MessageTest@7b69c6ba]" name="quit" is-config="true" duration-ms="844" started-at="2018-04-07T13:34:02Z" finished-at="2018-04-07T13:34:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.atmecs.automationPractice.MessageTest -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="32411" started-at="2018-04-07T08:04:03Z" finished-at="2018-04-07T08:04:36Z">
+      <class name="com.atmecs.automationPractice.LoginTest">
+        <test-method status="PASS" signature="loadConfigurationFile(java.lang.String)[pri:0, instance:com.atmecs.automationPractice.LoginTest@52f759d7]" name="loadConfigurationFile" is-config="true" duration-ms="6704" started-at="2018-04-07T13:34:03Z" finished-at="2018-04-07T13:34:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfigurationFile -->
+        <test-method status="PASS" signature="performLoginFromHomepage()[pri:0, instance:com.atmecs.automationPractice.LoginTest@52f759d7]" name="performLoginFromHomepage" duration-ms="15752" started-at="2018-04-07T13:34:10Z" finished-at="2018-04-07T13:34:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performLoginFromHomepage -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.atmecs.automationPractice.LoginTest@52f759d7]" name="quit" is-config="true" duration-ms="572" started-at="2018-04-07T13:34:26Z" finished-at="2018-04-07T13:34:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.atmecs.automationPractice.LoginTest -->
+      <class name="com.atmecs.automationPractice.MessageTest">
+        <test-method status="PASS" signature="loadConfigurationFile(java.lang.String)[pri:0, instance:com.atmecs.automationPractice.MessageTest@7cbd213e]" name="loadConfigurationFile" is-config="true" duration-ms="14300" started-at="2018-04-07T13:34:03Z" finished-at="2018-04-07T13:34:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfigurationFile -->
+        <test-method status="PASS" signature="performLogin()[pri:0, instance:com.atmecs.automationPractice.MessageTest@7cbd213e]" name="performLogin" duration-ms="11763" started-at="2018-04-07T13:34:17Z" finished-at="2018-04-07T13:34:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performLogin -->
+        <test-method status="PASS" signature="composeAndSendMessage()[pri:0, instance:com.atmecs.automationPractice.MessageTest@7cbd213e]" name="composeAndSendMessage" duration-ms="5819" started-at="2018-04-07T13:34:29Z" depends-on-methods="com.atmecs.automationPractice.MessageTest.performLogin" finished-at="2018-04-07T13:34:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- composeAndSendMessage -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.atmecs.automationPractice.MessageTest@7cbd213e]" name="quit" is-config="true" duration-ms="522" started-at="2018-04-07T13:34:35Z" finished-at="2018-04-07T13:34:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.atmecs.automationPractice.MessageTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
 </testng-results>

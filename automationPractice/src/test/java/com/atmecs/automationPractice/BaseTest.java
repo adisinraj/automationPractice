@@ -8,21 +8,21 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.MarionetteDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 /**
  * Unit test for simple App.
  */
 public class BaseTest{
 	
-	public static WebDriver driver = null;
+	public WebDriver driver = null;
 	public static Properties properties= null;
 	
-	@BeforeTest
-	public void loadConfigurationFile() {
+	@Parameters("browser")
+	@BeforeClass
+	public void loadConfigurationFile(String browser) {
 		properties = new Properties();
 		System.out.println(1);
 		ClassLoader classLoader = getClass().getClassLoader();
@@ -36,11 +36,13 @@ public class BaseTest{
 			e.printStackTrace();
 			}
 		
-	
-		//  System.setProperty(properties.getProperty("chromedriverkey"),properties.getProperty("chromedriverpath"));
-		//  driver = new ChromeDriver();
-	
-		driver = new FirefoxDriver();
+	if(browser.equalsIgnoreCase("chrome")){
+		  System.setProperty(properties.getProperty("chromedriverkey"),properties.getProperty("chromedriverpath"));
+		  driver = new ChromeDriver();
+	}
+	else if (browser.equalsIgnoreCase("firefox")){
+				driver = new FirefoxDriver();
+	}
 	}
 	
 	@AfterClass
