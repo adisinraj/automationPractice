@@ -3,7 +3,7 @@ package javalangClassFunction;
 public class ReverseArray {
 
 	public static void main(String[] args) {
-		Integer[] numbers={4,5,1,3,2};
+		Integer[] numbers={5,4,2,1,3};
 		Integer size = numbers.length;	//length keyword is reserved for the arrays for their length
 		System.out.println(size);
 		for(int i =0 ; i < size-1 ;i++){
