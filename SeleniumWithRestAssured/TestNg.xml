@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MySuite from testNg.xml" parallel="methods" preserve-order="true" thread-count="40">
+    <listeners>
+        <listener class-name="tests.RetryListener"/>
+        <listener class-name="tests.IISuiteListenerImpl"/>
+        <listener class-name="tests.ITestListenerImpl"/>
+    </listeners>
+    <test name="Chrome-Test">
+      <!--  <groups>
+            <run>
+                <include name="SMOKE"/>
+                <exclude name="SETTINGS"/>
+            </run>
+        </groups>-->
+        <packages>
+            <package name="tests.*"/>
+        </packages>
+    </test>
+</suite>
